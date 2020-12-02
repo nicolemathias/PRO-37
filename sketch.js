@@ -4,17 +4,18 @@ var fedTime,lastFed,currentTime;
 var feed,addFood;
 var foodObj;
 var gameState,readState;
+var firebase;
 
 function preload(){
 sadDog=loadImage("Dog.png");
-happyDog=loadImage("happy dog.png");
+happydog=loadImage("happydog (1).png");
 garden=loadImage("Garden.png");
 washroom=loadImage("Wash Room.png");
 bedroom=loadImage("Bed Room.png");
 }
 
 function setup() {
-  database=firebase.database();
+  database = firebase.database();
   createCanvas(400,500);
   
   foodObj = new Food();
